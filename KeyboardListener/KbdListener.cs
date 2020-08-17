@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.ComponentModel;
 
-namespace Example
+namespace KeyboardListener
 {
 	/// <summary>
 	/// The KeyboardListener is a static class that allows registering a number
@@ -254,8 +254,7 @@ namespace Example
 	
 			#region Private external methods
 
-			// In case you want to have a comprehensive overview of calling conventions follow the next link:
-			// http://www.codeproject.com/cpp/calling_conventions_demystified.asp
+			
 
 			[DllImport("User32.dll",CharSet = CharSet.Ansi,SetLastError=true)]
 			[return : MarshalAs(UnmanagedType.Bool)]
